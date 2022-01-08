@@ -1,0 +1,33 @@
+GET http://localhost:8000/api/groceries HTTP/1.1
+
+###
+
+POST http://localhost:8000/api/groceries HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Bread",
+    "amount": 1,
+    "unit": "Loaf",
+    "category": "Produce"
+}
+
+###
+
+GET http://localhost:8000/api/groceries/61d7b7e509645038158203d1 HTTP/1.1
+
+###
+
+PUT http://localhost:8000/api/groceries/61d7b7e509645038158203d1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Potato Bread",
+    "amount": 1,
+    "unit": "Loaf",
+    "category": "Produce"
+}
+
+###
+
+DELETE http://localhost:8000/api/groceries/61d7b7e509645038158203d1 HTTP/1.1
