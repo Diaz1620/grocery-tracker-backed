@@ -1,5 +1,5 @@
 const mongoose = require('mongoose'),
-    db = "change-me";
+    db = process.env.DB_URI;
 
 mongoose.connect(`mongodb://localhost/${db}`,{
     useUnifiedTopology: true,

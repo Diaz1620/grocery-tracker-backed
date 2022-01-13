@@ -12,3 +12,4 @@ app.use(cors(),express.json(),express.urlencoded({extended:true}));
 
 require('./server/config/database.config');
 require('./server/routes/grocery.routes')(app);
+require('./server/routes/user.routes')(app);

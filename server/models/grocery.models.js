@@ -16,6 +16,9 @@ const GrocerySchema = new mongoose.Schema({
     },
     category:{
         type: String
+    },
+    user_id:{
+        type: ObjectId
     }
 },{timestamps:true})
 
