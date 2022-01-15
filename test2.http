@@ -10,7 +10,7 @@ Content-Type: application/json
     "lastName":"Santiago",
     "email":"testemail@email.com",
     "password":"TestPass112"
-}
+} 
 
 ###
 

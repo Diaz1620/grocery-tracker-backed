@@ -18,7 +18,8 @@ const GrocerySchema = new mongoose.Schema({
         type: String
     },
     user_id:{
-        type: ObjectId
+        type: String,
+        required:[true,"ID error"]
     }
 },{timestamps:true})
 
