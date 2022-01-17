@@ -8,7 +8,7 @@ const GrocerySchema = new mongoose.Schema({
     },
     amount:{
         type: Number,
-        required:[true,"Amount is required"]
+        min: [1, 'Must have minimum of 1']
     },
     unit:{
         type: String,
@@ -19,10 +19,10 @@ const GrocerySchema = new mongoose.Schema({
     },
     user_id:{
         type: String,
-        required:[true,"ID error"]
     }
 },{timestamps:true})
 
+// required:[true,"ID error"]
 
 const Grocery = mongoose.model("Grocery",GrocerySchema);
 
