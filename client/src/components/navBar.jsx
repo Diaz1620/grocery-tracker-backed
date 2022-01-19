@@ -2,15 +2,15 @@ import "./navBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faPlus, faListUl } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link } from "@reach/router";
 
 const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="nav-wrapper">
-        <a href="#" className="center brand-logo">
+        <Link to="/" className="center brand-logo">
           PocketPantry
-        </a>
+        </Link>
         <ul id="nav-mobile" className="left">
           <li>
             <Link className="waves-effect" to="/">
@@ -25,7 +25,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link className="waves-effect" to="/list">
+            <Link className="waves-effect" to="/">
               <FontAwesomeIcon icon={faListUl} />
             </Link>
           </li>

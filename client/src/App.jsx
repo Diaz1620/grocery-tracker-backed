@@ -10,10 +10,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GroceryList from "./components/groceryList";
 import Main from './views/Main';
 import Create from './views/Create';
+import Edit from './views/Edit';
 
 function App() {
   return (
     <div className="App">
+      <NavBar></NavBar>
       <div className="d-flex col-6 mx-auto justify-content-around flex-wrap">
         <Link to="/">List</Link>
         <Link to="/new">Add Item</Link>
@@ -21,6 +23,7 @@ function App() {
       <Router>
         <Main path="/" />
         <Create path="/new" />
+        <Edit path="/edit/:id" />
       </Router>
     </div>
   );

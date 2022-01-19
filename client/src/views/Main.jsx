@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react";
 import Axios from 'axios';
+import { Link } from "@reach/router";
 
 const Main = props => {
     const [groceries, setGroceries] = useState(false);
@@ -38,7 +39,7 @@ const Main = props => {
                                             <td>{g.category}</td>
                                             <td>
                                                 <div className="d-flex justify-content-center">
-                                                    <button className="btn btn-primary">Edit</button> 
+                                                    <Link to={`/edit/${g._id}`} className="btn btn-primary">Edit</Link> 
                                                     <span className="p-1"/> 
                                                     <button className="btn btn-danger">Delete</button>
                                                 </div>
